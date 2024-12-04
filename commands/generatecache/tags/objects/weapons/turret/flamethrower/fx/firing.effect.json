@@ -1,0 +1,1583 @@
+{
+  "TagName": "objects\\weapons\\turret\\flamethrower\\fx\\firing",
+  "TagType": "effect",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "Flags": "RunEventsInParallel",
+    "FixedRandomSeed": 0,
+    "RestartIfWithin": 0.0,
+    "ContinueIfWithin": 0.0,
+    "DeathDelay": 0.1,
+    "Priority": "High",
+    "LoopStartEvent": -1,
+    "LocalLocation0": 0,
+    "RuntimeDangerRadius": 0.0,
+    "Locations": [
+      {
+        "MarkerName": "primary_trigger",
+        "Flags": "0",
+        "Priority": "High"
+      }
+    ],
+    "Events": [
+      {
+        "Name": "event_0",
+        "Flags": "None",
+        "Priority": "High",
+        "SkipFraction": 0.0,
+        "DelayBounds": "Lower: 0, Upper: 0",
+        "DurationBounds": "Lower: 0.2, Upper: 0.2",
+        "Parts": [],
+        "Accelerations": [],
+        "ParticleSystems": [
+          {
+            "Priority": "High",
+            "Particle": {
+              "Type": "particle",
+              "Name": "objects\\weapons\\turret\\flamethrower\\fx\\particles\\firing_gas",
+              "Generate": false
+            },
+            "LocationIndex": 0,
+            "CoordinateSystem": "World",
+            "Environment": "AnyEnvironment",
+            "Disposition": "EitherMode",
+            "CameraMode": "IndependentOfCameraMode",
+            "SortBias": 0,
+            "Flags": "TurnOffNearFadeOnEnhancedGraphics",
+            "PixelBudget": 0.0,
+            "NearRange": 10000.0,
+            "NearCutoff": 0.0,
+            "NearFadeOverride": 0.0,
+            "LodInDistance": -0.0,
+            "LodFeatherInDelta": 1.0,
+            "InverseLodFeatherIn": 1.0,
+            "LodOutDistance": 20.0,
+            "LodFeatherOutDelta": 5.0,
+            "InverseLodFeatherOut": 0.2,
+            "Emitters": [
+              {
+                "Name": "emitter_0",
+                "EmissionShape": "Sprayer",
+                "EmitterFlags": "Postprocessed, IsCpu, BecomesGpuWhenAtRest, AlphaBlackPoint_Bit3",
+                "ModelAxis": "Constant",
+                "ReferenceAxis": "X",
+                "CustomShape": null,
+                "BoundingRadiusEstimate": 1.0606155,
+                "BoundRadiusOverride": 0.0,
+                "UVScrollRate": "X: 0, Y: 0",
+                "TranslationalOffset": {
+                  "Mapping": {
+                    "InputVariable": "SystemAgeEmitterAge",
+                    "RangeVariable": "SystemAgeEmitterAge",
+                    "OutputModifier": "None",
+                    "OutputModifierInput": "ParticleAge",
+                    "Function": {
+                      "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                    },
+                    "RuntimeMConstantValue": 0.0,
+                    "RuntimeMFlags": "RealPoint3dType, Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                  },
+                  "StartingInterpolant": "X: 0, Y: 0, Z: 0",
+                  "EndingInterpolant": "X: 0, Y: 0, Z: 0"
+                },
+                "RelativeDirection": {
+                  "Mapping": {
+                    "InputVariable": "SystemAgeEmitterAge",
+                    "RangeVariable": "SystemRandomEmitterRandom",
+                    "OutputModifier": "None",
+                    "OutputModifierInput": "ParticleAge",
+                    "Function": {
+                      "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                    },
+                    "RuntimeMConstantValue": 0.0,
+                    "RuntimeMFlags": "RealVector3dType, Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                  },
+                  "DirectionAt0": "Yaw: 57.29578, Pitch: 0, Roll: 0",
+                  "DirectionAt1": "Yaw: 0, Pitch: 0, Roll: 0"
+                },
+                "EmissionRadius": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "EmissionAngle": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "EmissionAxisAngle": {
+                  "InputVariable": "SystemAgeEmitterAge",
+                  "RangeVariable": "ParticleRandom",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleStartingCount": {
+                  "InputVariable": "SystemAgeEmitterAge",
+                  "RangeVariable": "SystemCorrelationEmitterRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleRandom",
+                  "Function": {
+                    "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleMaxCount": {
+                  "InputVariable": "SystemAgeEmitterAge",
+                  "RangeVariable": "SystemCorrelationEmitterRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleRandom",
+                  "Function": {
+                    "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleEmissionRate": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "LocationLodSystemLod",
+                  "Function": {
+                    "Data": "ATQAAAAAyEEAAMhBAAAAAAAAAAA0M2tBAABwQQAAAAA="
+                  },
+                  "RuntimeMConstantValue": 25.0,
+                  "RuntimeMFlags": "IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleLifespan": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom2",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAADMzsz4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleMovement": {
+                  "Template": {
+                    "Type": "particle_physics",
+                    "Name": "fx\\physics_templates\\_default",
+                    "Generate": false
+                  },
+                  "Flags": "Physics, CollideWithStructure",
+                  "Movements": [
+                    {
+                      "Type": "Physics",
+                      "Flags": "Sphere",
+                      "Parameters": [
+                        {
+                          "ParameterId": 0,
+                          "Property": {
+                            "InputVariable": "ParticleAge",
+                            "RangeVariable": "ParticleCorrelationRandom2",
+                            "OutputModifier": "None",
+                            "OutputModifierInput": "ParticleCorrelationRandom2",
+                            "Function": {
+                              "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                            },
+                            "RuntimeMConstantValue": 0.0,
+                            "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                          }
+                        },
+                        {
+                          "ParameterId": 1,
+                          "Property": {
+                            "InputVariable": "ParticleAge",
+                            "RangeVariable": "ParticleCorrelationRandom1",
+                            "OutputModifier": "None",
+                            "OutputModifierInput": "ParticleCorrelationRandom2",
+                            "Function": {
+                              "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                            },
+                            "RuntimeMConstantValue": 0.0,
+                            "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                          }
+                        },
+                        {
+                          "ParameterId": 2,
+                          "Property": {
+                            "InputVariable": "ParticleAge",
+                            "RangeVariable": "ParticleCorrelationRandom2",
+                            "OutputModifier": "None",
+                            "OutputModifierInput": "ParticleAge",
+                            "Function": {
+                              "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                            },
+                            "RuntimeMConstantValue": 0.0,
+                            "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                          }
+                        }
+                      ],
+                      "RuntimeMConstantParameters": 7,
+                      "RuntimeMUsedParticleStates": 0
+                    },
+                    {
+                      "Type": "Collider",
+                      "Flags": "Sphere",
+                      "Parameters": [
+                        {
+                          "ParameterId": 0,
+                          "Property": {
+                            "InputVariable": "ParticleAge",
+                            "RangeVariable": "ParticleCorrelationRandom1",
+                            "OutputModifier": "None",
+                            "OutputModifierInput": "ParticleCorrelationRandom2",
+                            "Function": {
+                              "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                            },
+                            "RuntimeMConstantValue": 0.0,
+                            "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                          }
+                        },
+                        {
+                          "ParameterId": 1,
+                          "Property": {
+                            "InputVariable": "ParticleAge",
+                            "RangeVariable": "ParticleCorrelationRandom1",
+                            "OutputModifier": "None",
+                            "OutputModifierInput": "ParticleCorrelationRandom2",
+                            "Function": {
+                              "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                            },
+                            "RuntimeMConstantValue": 0.0,
+                            "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                          }
+                        }
+                      ],
+                      "RuntimeMConstantParameters": 3,
+                      "RuntimeMUsedParticleStates": 0
+                    }
+                  ]
+                },
+                "ParticleSelfAcceleration": {
+                  "Mapping": {
+                    "InputVariable": "SystemAgeEmitterAge",
+                    "RangeVariable": "SystemCorrelationEmitterRandom1",
+                    "OutputModifier": "None",
+                    "OutputModifierInput": "ParticleAge",
+                    "Function": {
+                      "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                    },
+                    "RuntimeMConstantValue": 0.0,
+                    "RuntimeMFlags": "RealVector3dType, Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                  },
+                  "StartingInterpolant": "I: 0, J: 0, K: 0",
+                  "EndingInterpolant": "I: 0, J: 0, K: 0"
+                },
+                "ParticleInitialVelocity": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom3",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAAAAAIEAAAABAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleRotation": {
+                  "InputVariable": "ParticleRotationPhysicsRotation",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleInitialRotationRate": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABQZ7I6YQu2OgAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleSize": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom4",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAAJqZGT7NzMw9AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleScale": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "CDQAAAAAAD8AAOA/AAAAAAAAAABI4fo+AAAAPzQAAAACAAAABwAAzZqZ+T7cMw/A/s6sP8k/xj8AAAAABwAAAP//f39/YwDArDrOP1GKkD/o7Ow9"
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleTint": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleAge",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQBAP///wAaa/gAAAAAAAI2/wBI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleAlpha": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAABI4fo+AAAAPzQAAAACAAAABwAAP9ej8D5ifq7BmrBQQQAAAAAAAAAABwAAAP//f39oVfI+TVyDP1Q8XsABh/w/"
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleAlphaBlackPoint": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleAge",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleRandom",
+                  "Function": {
+                    "Data": "CDQAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAABwAAAABAAAABwAAzf//f3+8cm+/oriAP99nFD/NzEw+"
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "RuntimeMGpu": {
+                  "ConstantPerParticleProperties": "TranslationOffset, RelativeDirection, EmissionRadius, EmissionAngle, EmissionAxisAngle, ParticleStartingCount, ParticleMaxCount, ParticleEmissionRate, ParticleSelfAcceleration, ParticleRotation, ParticleInitialRotationRate, ParticleTint",
+                  "ConstantOverTimeProperties": "TranslationOffset, RelativeDirection, EmissionRadius, EmissionAngle, EmissionAxisAngle, ParticleStartingCount, ParticleMaxCount, ParticleEmissionRate, ParticleSelfAcceleration, ParticleRotation, ParticleInitialRotationRate, ParticleTint",
+                  "UsedParticleStates": "Age, Random1, Random2, Random3, Random4",
+                  "Properties": [
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 227.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 262144.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 524288.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 25.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 1.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 1.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 786432.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 137.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 1048576.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 1310728.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 1.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 44.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    }
+                  ],
+                  "Functions": [
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.47,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 52.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -21.81171,
+                        13.043116,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        0.47330785,
+                        1.0262543,
+                        -3.4724321,
+                        1.97287,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.15,
+                      "RangeMax": 0.1,
+                      "Flags": 53.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.15,
+                      "RangeMax": 0.1,
+                      "Flags": 53.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.5125,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 52.0,
+                      "ExclusionMin": 1.0,
+                      "ExclusionMax": 1.0,
+                      "Innards": [
+                        -3.8868594,
+                        4.1494617,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -2.471219,
+                        4.385577,
+                        -1.3574978,
+                        0.44313943,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.4875,
+                      "RangeMin": 0.5,
+                      "RangeMax": 1.75,
+                      "Flags": 52.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -2.2375402,
+                        1.3500669,
+                        1.5488216,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -2.0060728,
+                        1.6111655,
+                        1.1292211,
+                        0.11568624,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 53.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 53.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.5,
+                      "Flags": 52.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -0.93534446,
+                        1.0056345,
+                        0.57970995,
+                        0.2,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "Colors": [
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 1.0,
+                        "Green": 1.0,
+                        "Blue": 1.0
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.16862746,
+                        "Green": 0.32941177,
+                        "Blue": 1.0
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.99215686,
+                        "Green": 0.5254902,
+                        "Blue": 0.16470589
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 1.0,
+                        "Green": 0.21568628,
+                        "Blue": 0.015686275
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.0,
+                        "Green": 0.0,
+                        "Blue": 0.0
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.0,
+                        "Green": 0.0,
+                        "Blue": 0.0
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "RuntimeMaximumLifespan": 0.35
+          },
+          {
+            "Priority": "High",
+            "Particle": {
+              "Type": "particle",
+              "Name": "objects\\weapons\\turret\\flamethrower\\fx\\particles\\firing_flames",
+              "Generate": false
+            },
+            "LocationIndex": 0,
+            "CoordinateSystem": "World",
+            "Environment": "AnyEnvironment",
+            "Disposition": "EitherMode",
+            "CameraMode": "ThirdPersonOnly",
+            "SortBias": 0,
+            "Flags": "OverrideNearFade, TurnOffNearFadeOnEnhancedGraphics",
+            "PixelBudget": 1.0,
+            "NearRange": 2.0278547,
+            "NearCutoff": 0.0,
+            "NearFadeOverride": 0.0,
+            "LodInDistance": 0.0,
+            "LodFeatherInDelta": 0.0,
+            "InverseLodFeatherIn": 1.0,
+            "LodOutDistance": 20.0,
+            "LodFeatherOutDelta": 5.0,
+            "InverseLodFeatherOut": 0.2,
+            "Emitters": [
+              {
+                "Name": "emitter_0",
+                "EmissionShape": "Sprayer",
+                "EmitterFlags": "Postprocessed, IsGpu, BecomesGpuWhenAtRest, AlphaBlackPoint_Bit3",
+                "ModelAxis": "Constant",
+                "ReferenceAxis": "X",
+                "CustomShape": null,
+                "BoundingRadiusEstimate": 0.77677673,
+                "BoundRadiusOverride": 0.0,
+                "UVScrollRate": "X: 0, Y: 0",
+                "TranslationalOffset": {
+                  "Mapping": {
+                    "InputVariable": "SystemAgeEmitterAge",
+                    "RangeVariable": "SystemAgeEmitterAge",
+                    "OutputModifier": "None",
+                    "OutputModifierInput": "ParticleAge",
+                    "Function": {
+                      "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                    },
+                    "RuntimeMConstantValue": 0.0,
+                    "RuntimeMFlags": "RealPoint3dType, Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                  },
+                  "StartingInterpolant": "X: 0, Y: 0, Z: 0",
+                  "EndingInterpolant": "X: 0, Y: 0, Z: 0"
+                },
+                "RelativeDirection": {
+                  "Mapping": {
+                    "InputVariable": "SystemAgeEmitterAge",
+                    "RangeVariable": "SystemRandomEmitterRandom",
+                    "OutputModifier": "None",
+                    "OutputModifierInput": "ParticleAge",
+                    "Function": {
+                      "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                    },
+                    "RuntimeMConstantValue": 0.0,
+                    "RuntimeMFlags": "RealVector3dType, Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                  },
+                  "DirectionAt0": "Yaw: 0, Pitch: 0, Roll: 0",
+                  "DirectionAt1": "Yaw: 0, Pitch: 0, Roll: 0"
+                },
+                "EmissionRadius": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "EmissionAngle": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom2",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAAAAAAAAAACBBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "EmissionAxisAngle": {
+                  "InputVariable": "SystemAgeEmitterAge",
+                  "RangeVariable": "ParticleRandom",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleStartingCount": {
+                  "InputVariable": "SystemAgeEmitterAge",
+                  "RangeVariable": "SystemCorrelationEmitterRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleRandom",
+                  "Function": {
+                    "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleMaxCount": {
+                  "InputVariable": "SystemAgeEmitterAge",
+                  "RangeVariable": "SystemCorrelationEmitterRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleRandom",
+                  "Function": {
+                    "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleEmissionRate": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "SystemAgeEmitterAge",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "LocationLodSystemLod",
+                  "Function": {
+                    "Data": "ATQAAAAAIEIAACBCAAAAAAAAAAA0M2tBAABwQQAAAAA="
+                  },
+                  "RuntimeMConstantValue": 40.0,
+                  "RuntimeMFlags": "IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleLifespan": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom3",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAAM3MTD6amRk+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleMovement": {
+                  "Template": {
+                    "Type": "particle_physics",
+                    "Name": "fx\\physics_templates\\_default",
+                    "Generate": false
+                  },
+                  "Flags": "Wind",
+                  "Movements": []
+                },
+                "ParticleSelfAcceleration": {
+                  "Mapping": {
+                    "InputVariable": "SystemAgeEmitterAge",
+                    "RangeVariable": "SystemCorrelationEmitterRandom1",
+                    "OutputModifier": "None",
+                    "OutputModifierInput": "ParticleAge",
+                    "Function": {
+                      "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                    },
+                    "RuntimeMConstantValue": 0.0,
+                    "RuntimeMFlags": "RealVector3dType, Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                  },
+                  "StartingInterpolant": "I: 0, J: 0, K: 0",
+                  "EndingInterpolant": "I: 0, J: 0, K: 0"
+                },
+                "ParticleInitialVelocity": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom4",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAAAAAQEAAAABAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleRotation": {
+                  "InputVariable": "ParticleRotationPhysicsRotation",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleInitialRotationRate": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABQZ7I6YQu2OgAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+                },
+                "ParticleSize": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUAAM3MzD0AAAA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleScale": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "CDQAAAAAQD8AAABAAAAAAAAAAABI4fo+AAAAPxwAAAABAAAABwAAzf//f38+55w/8DlnvgAAAAAAAAAA"
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleTint": {
+                  "InputVariable": "ParticleCorrelationRandom1",
+                  "RangeVariable": "ParticleAge",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "ATUCAP///wAAAIA/AAAAABpr+ABI4fo+AAAAPwAAAAA="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleAlpha": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "ParticleCorrelationRandom1",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleAge",
+                  "Function": {
+                    "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAABI4fo+AAAAP0wAAAADAAAABwAAzRSuhz7IestBEP3vQAAAAAAAAAAABwAAAB+F6z7cc3VDP26Rw+WO30JVN0zBBwAAAP//f3+YOEtB7obewfg4jEGxchrA"
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "ParticleAlphaBlackPoint": {
+                  "InputVariable": "ParticleAge",
+                  "RangeVariable": "Random5",
+                  "OutputModifier": "None",
+                  "OutputModifierInput": "ParticleRandom",
+                  "Function": {
+                    "Data": "CDEAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAADgAAAABAAAABwAAzf//f3/ooD++HfSXPwAAAAAAAAAAAQAAAAcAAM3//39/+GtBPjh90j4AAAAAAAAAAA=="
+                  },
+                  "RuntimeMConstantValue": 0.0,
+                  "RuntimeMFlags": "None"
+                },
+                "RuntimeMGpu": {
+                  "ConstantPerParticleProperties": "TranslationOffset, RelativeDirection, EmissionRadius, EmissionAxisAngle, ParticleStartingCount, ParticleMaxCount, ParticleEmissionRate, ParticleSelfAcceleration, ParticleRotation, ParticleInitialRotationRate",
+                  "ConstantOverTimeProperties": "TranslationOffset, RelativeDirection, EmissionRadius, EmissionAxisAngle, ParticleStartingCount, ParticleMaxCount, ParticleEmissionRate, ParticleSelfAcceleration, ParticleRotation, ParticleInitialRotationRate",
+                  "UsedParticleStates": "Age, Random1, Random2, Random3, Random4, Random5",
+                  "Properties": [
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 1.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 524296.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 262144.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 134.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 655360.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 18.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 1.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 917504.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 1310720.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 1.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 684.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 1441800.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 1.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 35.0
+                      }
+                    },
+                    {
+                      "MConstantValue": 0.0,
+                      "MInnardsY": {
+                        "FBitfield": 2097152.0
+                      },
+                      "MInnardsZ": {
+                        "FBitfield": 0.0
+                      },
+                      "MInnardsW": {
+                        "FBitfield": 0.0
+                      }
+                    }
+                  ],
+                  "Functions": [
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 53.0,
+                      "ExclusionMin": 1.0,
+                      "ExclusionMax": 1.0,
+                      "Innards": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 53.0,
+                      "ExclusionMin": 1.0,
+                      "ExclusionMax": 1.0,
+                      "Innards": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.265,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 52.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        25.434952,
+                        7.4996414,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.46,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        245.45258,
+                        -290.8613,
+                        111.77909,
+                        -12.763509,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        12.701317,
+                        -27.815884,
+                        17.527817,
+                        -2.4132502,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.1,
+                      "RangeMax": 0.125,
+                      "Flags": 53.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 1.0
+                      },
+                      "DomainMax": 1.0,
+                      "RangeMin": 0.1,
+                      "RangeMax": 0.125,
+                      "Flags": 53.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.0925,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 52.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -593.1439,
+                        124.34192,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 0.6575,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        19.867435,
+                        -29.233852,
+                        12.676068,
+                        -0.34368375,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 0.0,
+                      "Flags": 0.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        49.77924,
+                        -123.76364,
+                        98.18957,
+                        -24.205164,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.75,
+                      "RangeMax": 2.0,
+                      "Flags": 52.0,
+                      "ExclusionMin": 0.5,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        1.225807,
+                        -0.22580695,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 49.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        -0.18713725,
+                        1.1871372,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "FunctionType": {
+                        "FunctionType": 7.0
+                      },
+                      "DomainMax": 3.4028235E+38,
+                      "RangeMin": 0.0,
+                      "RangeMax": 1.0,
+                      "Flags": 49.0,
+                      "ExclusionMin": 0.0,
+                      "ExclusionMax": 0.0,
+                      "Innards": [
+                        0.18888843,
+                        0.4111116,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "Colors": [
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 1.0,
+                        "Green": 1.0,
+                        "Blue": 1.0
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.972549,
+                        "Green": 0.41960785,
+                        "Blue": 0.101960786
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 1.0,
+                        "Red": 1.0,
+                        "Green": 1.0,
+                        "Blue": 1.0
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.0,
+                        "Green": 0.0,
+                        "Blue": 0.0
+                      }
+                    },
+                    {
+                      "Color": {
+                        "Alpha": 0.0,
+                        "Red": 0.0,
+                        "Green": 0.0,
+                        "Blue": 0.0
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "RuntimeMaximumLifespan": 0.2
+          }
+        ]
+      }
+    ],
+    "LoopingSound": null,
+    "LocationIndex": 0,
+    "BindScaleToEvent": -1,
+    "LocalLocation1": 0,
+    "AlwaysPlayDistance": 0.0,
+    "NeverPlayDistance": 0.0,
+    "RuntimeLightprobeDeathDelay": 0.0,
+    "RuntimeLocalSpaceDeathDelay": 0.1,
+    "ConicalDistributions": []
+  }
+}

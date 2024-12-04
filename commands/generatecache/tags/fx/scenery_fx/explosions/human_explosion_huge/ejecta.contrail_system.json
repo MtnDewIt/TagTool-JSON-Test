@@ -1,0 +1,577 @@
+{
+  "TagName": "fx\\scenery_fx\\explosions\\human_explosion_huge\\ejecta",
+  "TagType": "contrail_system",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "Contrails": [
+      {
+        "Name": "contrail_0",
+        "OriginFadeRange": 0.0,
+        "OriginFadeCutoff": 0.0,
+        "EdgeFadeRange": 15.0,
+        "EdgeFadeCutoff": 10.0,
+        "LodInDistance": 0.0,
+        "LodFeatherInDistance": 0.0,
+        "LodOutDistance": 0.0,
+        "LodFeatherOutDistance": 0.0,
+        "EmissionRate": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ContrailRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ContrailLod",
+          "MappingFunction": {
+            "Data": "ATQAAAAAyEEAAMhBAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 25.0,
+          "RuntimeMFlags": -32
+        },
+        "ProfileLifespan": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ContrailRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAoD8AAKA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 1.25,
+          "RuntimeMFlags": -32
+        },
+        "ProfileSelfAcceleration": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -20,
+          "StartingInterpolant": "I: 0, J: 0, K: 0",
+          "EndingInterpolant": "I: 0, J: 0, K: 0"
+        },
+        "ProfileSize": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAACamRk+AAAAAAAAAAAAAAAAAAAAADQAAAACAAAABwAAzTMzkz63f5hAj2ptwbQ260AAAAAABwAAAP//f3+Yqda/r27jP4wWG7+smIg/"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfileOffset": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -23,
+          "StartingInterpolant": "X: 0, Y: 0",
+          "EndingInterpolant": "X: 0, Y: 0"
+        },
+        "ProfileRotation": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileRotationRate": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "AppearanceFlags": "EdgeFaded",
+        "ProfileShape": "AlignedRibbon",
+        "NumberOfNgonSides": 0,
+        "RenderMethod": {
+          "BaseRenderMethod": {
+            "Type": "render_method_definition",
+            "Name": "shaders\\contrail",
+            "Generate": false
+          },
+          "Options": [
+            {
+              "OptionIndex": 0
+            },
+            {
+              "OptionIndex": 8
+            },
+            {
+              "OptionIndex": 1
+            },
+            {
+              "OptionIndex": 0
+            }
+          ],
+          "Parameters": [],
+          "ShaderProperties": [
+            {
+              "Template": {
+                "Type": "render_method_template",
+                "Name": "shaders\\contrail_templates\\_0_8_1_0",
+                "Generate": false
+              },
+              "TextureConstants": [
+                {
+                  "Bitmap": {
+                    "Type": "bitmap",
+                    "Name": "fx\\contrails\\_bitmaps\\flaming_trail",
+                    "Generate": false
+                  },
+                  "BitmapIndex": 0,
+                  "SamplerAddressMode": {
+                    "SamplerAddressUV": 0
+                  },
+                  "FilterMode": "Trilinear",
+                  "ExternTextureMode": "UseBitmapAsNormal",
+                  "TextureTransformConstantIndex": -1,
+                  "TextureTransformOverlayIndices": {
+                    "Integer": 0
+                  }
+                }
+              ],
+              "RealConstants": [],
+              "IntegerConstants": [],
+              "BooleanConstants": 0,
+              "EntryPoints": [],
+              "Passes": [],
+              "RoutingInfo": [],
+              "Functions": [],
+              "BlendMode": "AddSrcTimesSrcalpha",
+              "Flags": "None",
+              "ImSoFiredPad": 0,
+              "QueryableProperties": [
+                -1,
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+              ]
+            }
+          ],
+          "RenderFlags": "None",
+          "SortLayer": "Normal",
+          "Version": 0,
+          "CustomFogSettingIndex": 0,
+          "PredictionAtomIndex": -1
+        },
+        "Tiling": "X: 1.25, Y: 1",
+        "ScrollSpeed": "X: 0, Y: 0",
+        "ProfileColor": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQDAJvj/wBHq/8AYdT/AAA0/wAAAAAAAAAAADQAAAACAAAABwAAzeF6lD4cloG/9OKBQAAAAAAAAAAABwAAAP//f3+Sm7A+Kk8JwP1jUEArQum+"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 64
+        },
+        "ProfileAlpha": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAEwAAAADAAAABwAAzT0KFz7/+A/EaugCQwAAAAAAAAAABwAAADMzsz5gejTBhBEMQCpzjz9owlI/BwAAAP//f3/p+29A2j3OwFkH0j89+IY/"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfileSecondaryAlpha": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAADQAAAACAAAABwAAzQrXMz/Glqq9TK1vPQAAAAAAAIA/BwAAAP//f39N/JZCeLhAw332HkOt8CbC"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 64
+        },
+        "ProfileBlackPoint": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAAAAAEA/AAAAAAAAAAAAAAAAAAAAABwAAAABAAAABwAAzf//f39wRcq+XJGyPwAAAAAAAAAA"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 64
+        },
+        "ProfilePalette": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileIntensity": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAgD8AAEBAAAAAAAAAAAAAAAAAAAAAACwAAAACAAAABAAAzaRwPT4AAAAAAACAPwduTcD//39/aVGhwAFUSEHlrR7BYQocQA=="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "RuntimeMConstantPerProfileProperties": 3831,
+        "RuntimeMUsedStates": 129,
+        "RuntimeMGpuData": {
+          "Properties": [
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 8.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 26.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 262144",
+              "Magnitude": 917556.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 524288",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 917504",
+              "Magnitude": 917504.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 1179648",
+              "Magnitude": 917504.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 1310720",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            }
+          ],
+          "Functions": [
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.2875, Blue: 0",
+                  "Magnitude": 0.15
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 4.76559, Green: -14.838515, Blue: 7.3504276",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -1.6770506, Green: 1.7768153, Blue: -0.6058128",
+                  "Magnitude": 1.0671592
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.29, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 1, Blue: 1",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -1.0123935, Green: 4.0589542, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0.3449369, Green: -2.1454568, Blue: 3.2561028",
+                  "Magnitude": -0.45558295
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.1475, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -575.89056, Green: 130.90787, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.35, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -11.279877, Green: 2.188569, Blue: 1.120702",
+                  "Magnitude": 0.8232789
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 3.7497504, Green: -6.4450502, Blue: 1.6408492",
+                  "Magnitude": 1.0544506
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.7025, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -0.08329539, Green: 0.05851488, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 75.492775, Green: -192.72058, Blue: 158.96284",
+                  "Magnitude": -41.735035
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.75
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -0.39506102, Green: 1.395061, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 4, Green: 0.185, Blue: 1",
+                  "Magnitude": 3.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 1, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -5.041188, Green: 12.520509, Blue: -9.917455",
+                  "Magnitude": 2.4381335
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            }
+          ],
+          "Colors": [
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 1, Green: 0.8901961, Blue: 0.60784316",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 1, Green: 0.67058825, Blue: 0.2784314",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 1, Green: 0.20392157, Blue: 0",
+              "Magnitude": 0.0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

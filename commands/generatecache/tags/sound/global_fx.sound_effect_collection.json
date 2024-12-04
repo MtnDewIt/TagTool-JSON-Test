@@ -1,0 +1,1716 @@
+{
+  "TagName": "sound\\global_fx",
+  "TagType": "sound_effect_collection",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "SoundEffects": [
+      {
+        "Name": "radio_default",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 1,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\radio_static\\radio_static",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "global_test",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\global_speaker_chorus",
+              "Generate": false
+            },
+            "Components": [],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_extra_sound_inputs",
+                "Overrides": [
+                  {
+                    "Name": "sfx_oscillator_input",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.0,
+                    "Function": {
+                      "Data": "AzQAAAAAAAAAAIA/AAAAAAAAAABI4fo+AAAAPxQAAAAGzc3NAACAPwAAAAAAAAAAAACAPw=="
+                    }
+                  }
+                ]
+              },
+              {
+                "DSPEffect": "sfx_global_chorus",
+                "Overrides": [
+                  {
+                    "Name": "chorus_gain",
+                    "Input": "time",
+                    "Range": "scale",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATUAAAAAAAAAAIC/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_3d",
+        "OverrideMixbins": [],
+        "Flags": "Use3dRadioHack",
+        "RadioChannel": 1,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 0,
+            "LeftFrequencyScale": "Lower: 8000, Upper: 1400",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 0, Upper: 0",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: 0, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\radio_static\\radio_static",
+                  "Generate": false
+                },
+                "Gain": 0,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "rolloff",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAIA+AAAAAAAAAABI4fo+AAAAPxwAAAABAAAABwAAzf//f38ic/q/ROZ0PwAAAAAAAIA/"
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "heretic_grunt",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 9, Upper: 9",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 300, Upper: 300",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [
+          {
+            "DelayScale": "Lower: 0, Upper: 0",
+            "DelayRandomBaseVariance": "Lower: 0, Upper: 0",
+            "FrequencyScale": "Lower: 2, Upper: 2",
+            "FrequencyRandomBaseVariance": "Lower: 1, Upper: 1",
+            "PitchModulationScale": "Lower: 0, Upper: 0",
+            "PitchModulationRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "FilterLFO": [
+          {
+            "DelayScale": "Lower: 0, Upper: 0",
+            "DelayRandomBaseVariance": "Lower: 0, Upper: 0",
+            "FrequencyScale": "Lower: 2, Upper: 2",
+            "FrequencyRandomBaseVariance": "Lower: 1, Upper: 1",
+            "CutoffModulationScale": "Lower: -0.05, Upper: 0.05",
+            "CutoffModulationRandomBaseVariance": "Lower: 0, Upper: 0",
+            "GainModulationScale": "Lower: -3, Upper: -3",
+            "GainModulationRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "SoundEffect": []
+      },
+      {
+        "Name": "controller_0_headset",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\controller_0_headset",
+              "Generate": false
+            },
+            "Components": [],
+            "TemplateCollection": [],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "controller_1_headset",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\controller_1_headset",
+              "Generate": false
+            },
+            "Components": [],
+            "TemplateCollection": [],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "controller_2_headset",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\controller_2_headset",
+              "Generate": false
+            },
+            "Components": [],
+            "TemplateCollection": [],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "controller_3_headset",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\controller_3_headset",
+              "Generate": false
+            },
+            "Components": [],
+            "TemplateCollection": [],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_covy",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 1,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\covy_radio\\covy_radio",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "heretic_elite",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 9, Upper: 9",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 100, Upper: 100",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [
+          {
+            "DelayScale": "Lower: 0, Upper: 0",
+            "DelayRandomBaseVariance": "Lower: 0, Upper: 0",
+            "FrequencyScale": "Lower: 2, Upper: 2",
+            "FrequencyRandomBaseVariance": "Lower: 1, Upper: 1",
+            "PitchModulationScale": "Lower: 0.05, Upper: 0.05",
+            "PitchModulationRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "FilterLFO": [
+          {
+            "DelayScale": "Lower: 0, Upper: 0",
+            "DelayRandomBaseVariance": "Lower: 0, Upper: 0",
+            "FrequencyScale": "Lower: 2, Upper: 2",
+            "FrequencyRandomBaseVariance": "Lower: 1, Upper: 1",
+            "CutoffModulationScale": "Lower: -0.05, Upper: 0.05",
+            "CutoffModulationRandomBaseVariance": "Lower: 0, Upper: 0",
+            "GainModulationScale": "Lower: -3, Upper: -3",
+            "GainModulationRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "SoundEffect": []
+      },
+      {
+        "Name": "radio_covy_3d",
+        "OverrideMixbins": [],
+        "Flags": "Use3dRadioHack",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 0,
+            "LeftFrequencyScale": "Lower: 8000, Upper: 1400",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 0, Upper: 0",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: 0, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\covy_radio\\covy_radio",
+                  "Generate": false
+                },
+                "Gain": 0,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "rolloff",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAIA+AAAAAAAAAABI4fo+AAAAPxwAAAABAAAABwAAzf//f38ic/q/ROZ0PwAAAAAAAIA/"
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_default_in",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\radio_static\\radio_static_in",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_default_out",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\radio_static\\radio_static_out",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_default_loop",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\radio_static\\radio_static_loop",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_covy_in",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\covy_radio\\covy_radio_in",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_covy_loop",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\covy_radio\\covy_radio_loop",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_covy_out",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\covy_radio\\covy_radio_out",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAAAAgD4AAIA+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_default_low",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\radio_static\\radio_static",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAM3MTD7NzEw+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      },
+      {
+        "Name": "radio_covy_low",
+        "OverrideMixbins": [],
+        "Flags": "0",
+        "RadioChannel": 0,
+        "Filter": [
+          {
+            "FilterType": 2,
+            "FilterWidth": 1,
+            "LeftFrequencyScale": "Lower: 1200, Upper: 1200",
+            "LeftFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "LeftGainScale": "Lower: 3, Upper: 3",
+            "LeftGainRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightFrequencyScale": "Lower: 150, Upper: 150",
+            "RightFrequencyRandomBaseVariance": "Lower: 0, Upper: 0",
+            "RightGainScale": "Lower: -64, Upper: -64",
+            "RightGainRandomBaseVariance": "Lower: 0, Upper: 0"
+          }
+        ],
+        "PitchLFO": [],
+        "FilterLFO": [],
+        "SoundEffect": [
+          {
+            "Template": {
+              "Type": "sound_effect_template",
+              "Name": "sound\\dsp_effects\\sound_effect_templates\\mono_distortion",
+              "Generate": false
+            },
+            "Components": [
+              {
+                "Sound": {
+                  "Type": "sound_looping",
+                  "Name": "sound\\dsp_effects\\covy_radio\\covy_radio",
+                  "Generate": false
+                },
+                "Gain": 3225419776,
+                "Flags": "0"
+              }
+            ],
+            "TemplateCollection": [
+              {
+                "DSPEffect": "sfx_mono_distortion",
+                "Overrides": [
+                  {
+                    "Name": "post_filter_frequency",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 80.0,
+                    "Function": {
+                      "Data": "ATQAAAAAoEIAAKBCAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAA8MEAAPDBAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "post_filter_q",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "ATQAAAAAAD8AAAA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "gain",
+                    "Input": "invalid",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.358,
+                    "Function": {
+                      "Data": "ATQAAM3MTD7NzEw+AAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_frequency",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 120.0,
+                    "Function": {
+                      "Data": "ATQAAACgjEUAoIxFAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_gain",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": -30.0,
+                    "Function": {
+                      "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPwAAAAA="
+                    }
+                  },
+                  {
+                    "Name": "pre_filter_q",
+                    "Input": "time",
+                    "Range": "invalid",
+                    "TimePeriod": 1.0,
+                    "IntegerValue": 0,
+                    "RealValue": 0.5,
+                    "Function": {
+                      "Data": "CDQAAAAAAAAAAAAAAAAAAAAAAABI4fo+AAAAPxQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+                    }
+                  }
+                ]
+              }
+            ],
+            "HardwareFormat": "",
+            "PlatformEffect": []
+          }
+        ]
+      }
+    ]
+  }
+}

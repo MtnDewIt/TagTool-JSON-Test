@@ -1,0 +1,595 @@
+{
+  "TagName": "objects\\equipment\\instantcover\\instantcover",
+  "TagType": "model",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "RenderModel": {
+      "Type": "render_model",
+      "Name": "objects\\equipment\\instantcover\\instantcover",
+      "Generate": false
+    },
+    "CollisionModel": {
+      "Type": "collision_model",
+      "Name": "objects\\equipment\\instantcover\\instantcover",
+      "Generate": false
+    },
+    "Animation": {
+      "Type": "model_animation_graph",
+      "Name": "objects\\equipment\\instantcover\\instantcover",
+      "Generate": false
+    },
+    "PhysicsModel": {
+      "Type": "physics_model",
+      "Name": "objects\\equipment\\instantcover\\instantcover",
+      "Generate": false
+    },
+    "DisappearDistance": 90.0,
+    "BeginFadeDistance": 87.0,
+    "AnimationDistance": 0.0,
+    "ShadowFadeDistance": 0.0,
+    "InstanceDisappearDistance": 0.0,
+    "LodModel": null,
+    "Variants": [
+      {
+        "Name": "default",
+        "Voice": null,
+        "DialogueEffect": "invalid",
+        "AiCharacter": "None",
+        "ModelRegionIndices": [
+          0,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "Regions": [
+          {
+            "Name": "generator",
+            "RenderModelRegionIndex": 0,
+            "RuntimeFlags": 0,
+            "ParentVariant": -1,
+            "Permutations": [
+              {
+                "Name": "base",
+                "RenderModelPermutationIndex": 0,
+                "Flags": "None",
+                "Probability": 1.0,
+                "States": [],
+                "RuntimeStatePermutationIndices": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "SortOrder": "NoSorting"
+          },
+          {
+            "Name": "shield",
+            "RenderModelRegionIndex": 1,
+            "RuntimeFlags": 0,
+            "ParentVariant": -1,
+            "Permutations": [
+              {
+                "Name": "inactive",
+                "RenderModelPermutationIndex": 0,
+                "Flags": "None",
+                "Probability": 1.0,
+                "States": [
+                  {
+                    "Name": "active",
+                    "ModelPermutationIndex": 1,
+                    "PropertyFlags": "None",
+                    "State2": "MinorDamage",
+                    "LoopingEffect": null,
+                    "LoopingEffectMarkerName": "invalid",
+                    "InitialProbability": 0.0
+                  },
+                  {
+                    "Name": "inactive",
+                    "ModelPermutationIndex": 0,
+                    "PropertyFlags": "Shielded",
+                    "State2": "MinorDamage",
+                    "LoopingEffect": null,
+                    "LoopingEffectMarkerName": "invalid",
+                    "InitialProbability": 0.0
+                  }
+                ],
+                "RuntimeStatePermutationIndices": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "SortOrder": "NoSorting"
+          }
+        ],
+        "Objects": [],
+        "InstanceGroupIndex": -1
+      }
+    ],
+    "RegionSort": [],
+    "InstanceGroups": [],
+    "Materials": [
+      {
+        "MaterialName": "instantcover_inactive",
+        "MaterialType": "Dirt",
+        "DamageSectionIndex": 0,
+        "RuntimeCollisionMaterialIndex": 0,
+        "RuntimeDamagerMaterialIndex": -1,
+        "GlobalMaterialName": "energy_shield_thick_cov_instantcover_out",
+        "GlobalMaterialIndex": 229
+      },
+      {
+        "MaterialName": "instantcover_outside",
+        "MaterialType": "Dirt",
+        "DamageSectionIndex": 0,
+        "RuntimeCollisionMaterialIndex": 1,
+        "RuntimeDamagerMaterialIndex": -1,
+        "GlobalMaterialName": "energy_shield_thick_cov_instantcover_out",
+        "GlobalMaterialIndex": 229
+      },
+      {
+        "MaterialName": "instantcover_inside",
+        "MaterialType": "Dirt",
+        "DamageSectionIndex": -1,
+        "RuntimeCollisionMaterialIndex": 2,
+        "RuntimeDamagerMaterialIndex": -1,
+        "GlobalMaterialName": "energy_shield_thick_cov_instantcover_in",
+        "GlobalMaterialIndex": 230
+      },
+      {
+        "MaterialName": "hard_metal_thin_cov",
+        "MaterialType": "Dirt",
+        "DamageSectionIndex": 1,
+        "RuntimeCollisionMaterialIndex": 3,
+        "RuntimeDamagerMaterialIndex": -1,
+        "GlobalMaterialName": "hard_metal_thin_cov_equipment",
+        "GlobalMaterialIndex": 222
+      }
+    ],
+    "NewDamageInfo": [
+      {
+        "Flags": "None",
+        "GlobalIndirectMaterialName": "hard_metal_thin_cov_equipment",
+        "IndirectDamageSection": 1,
+        "CollisionDamageReportingType": {
+          "HaloOnline": "Guardians"
+        },
+        "ResponseDamageReportingType": {
+          "HaloOnline": "Guardians"
+        },
+        "MaximumVitality": 45.0,
+        "MinStunDamage": 0.0,
+        "StunTime": 0.0,
+        "RechargeTime": 0.0,
+        "RechargeFraction": 1.0,
+        "MaxShieldVitality": 200.0,
+        "GlobalShieldMaterialName": "energy_shield_thick_cov_instantcover_out",
+        "ShieldMinStunDamage": 0.0,
+        "ShieldStunTime": 5.0,
+        "ShieldRechargeTime": 0.1,
+        "ShieldDamagedThreshold": 0.0,
+        "ShieldDamagedEffect": null,
+        "ShieldDepletedEffect": {
+          "Type": "effect",
+          "Name": "objects\\equipment\\instantcover\\fx\\shield_collapse",
+          "Generate": false
+        },
+        "ShieldRechargingEffect": {
+          "Type": "effect",
+          "Name": "objects\\equipment\\instantcover\\fx\\shield_recharge",
+          "Generate": false
+        },
+        "DamageSections": [
+          {
+            "Name": "shield",
+            "Flags": "AbsorbsBodyDamage",
+            "VitalityPercentage": 1.0,
+            "InstantResponses": [
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "None",
+                "DamageThreshold": 0.0,
+                "PrimaryTransitionEffect": null,
+                "SecondaryTransitionEffect": null,
+                "TransitionDamageEffect": null,
+                "Region": "invalid",
+                "NewState": "Default",
+                "RuntimeRegionIndex": -1,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "invalid",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.0,
+                "DelayEffect": null,
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "invalid",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              }
+            ],
+            "StunTime": 0.0,
+            "RechargeTime": 0.0,
+            "RuntimeRechargeVelocity": 0.0,
+            "ResurrectionRestoredRegionName": "invalid",
+            "ResurrectionRegionRuntimeIndex": -1
+          },
+          {
+            "Name": "generator",
+            "Flags": "TakesFullDamageWhenObjectDies, IgnoresShields",
+            "VitalityPercentage": 1.0,
+            "InstantResponses": [
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "DestroysObject",
+                "DamageThreshold": 0.0,
+                "PrimaryTransitionEffect": {
+                  "Type": "effect",
+                  "Name": "fx\\scenery_fx\\destruction\\covenant_mech_break_small\\covenant_mech_break_small",
+                  "Generate": false
+                },
+                "SecondaryTransitionEffect": {
+                  "Type": "effect",
+                  "Name": "objects\\equipment\\instantcover\\fx\\destruction\\garbage_spawn",
+                  "Generate": false
+                },
+                "TransitionDamageEffect": null,
+                "Region": "invalid",
+                "NewState": "Default",
+                "RuntimeRegionIndex": -1,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "fx_damage",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.0,
+                "DelayEffect": null,
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "invalid",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              }
+            ],
+            "StunTime": 0.0,
+            "RechargeTime": 0.0,
+            "RuntimeRechargeVelocity": 0.0,
+            "ResurrectionRestoredRegionName": "invalid",
+            "ResurrectionRegionRuntimeIndex": -1
+          },
+          {
+            "Name": "deploy",
+            "Flags": "None",
+            "VitalityPercentage": 0.0,
+            "InstantResponses": [
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "FiresOnCreation",
+                "DamageThreshold": 0.0,
+                "PrimaryTransitionEffect": {
+                  "Type": "effect",
+                  "Name": "fx\\scenery_fx\\destruction\\covenant_mech_break_small\\covenant_mech_break_small",
+                  "Generate": false
+                },
+                "SecondaryTransitionEffect": null,
+                "TransitionDamageEffect": null,
+                "Region": "shield",
+                "NewState": "MinorDamage",
+                "RuntimeRegionIndex": 1,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "invalid",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.5,
+                "DelayEffect": {
+                  "Type": "effect",
+                  "Name": "objects\\equipment\\instantcover\\fx\\delay_effect_for_sound",
+                  "Generate": false
+                },
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "invalid",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              }
+            ],
+            "StunTime": 0.0,
+            "RechargeTime": 0.0,
+            "RuntimeRechargeVelocity": 0.0,
+            "ResurrectionRestoredRegionName": "invalid",
+            "ResurrectionRegionRuntimeIndex": -1
+          }
+        ],
+        "Nodes": [
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          }
+        ],
+        "GlobalShieldMaterialIndex": 229,
+        "GlobalIndirectMaterialIndex": 222,
+        "RuntimeShieldRechargeVelocity": 10.0,
+        "RuntimeHealthRechargeVelocity": 0.0,
+        "DamageSeats": [],
+        "DamageConstraints": []
+      }
+    ],
+    "Targets": [
+      {
+        "Flags": "None",
+        "MarkerName": "target_base",
+        "Size": 0.05,
+        "ConeAngle": "Degrees: 180",
+        "DamageSection": 1,
+        "Variant": -1,
+        "TargetingRelevance": 0.5,
+        "AoeExclusionRadius": 0.0,
+        "LockOnData": {
+          "Flags": "0",
+          "LockOnDistance": 0.0,
+          "TrackingType": "invalid"
+        }
+      },
+      {
+        "Flags": "None",
+        "MarkerName": "indirect_shield_l",
+        "Size": 0.3,
+        "ConeAngle": "Degrees: 180",
+        "DamageSection": 0,
+        "Variant": -1,
+        "TargetingRelevance": 0.0,
+        "AoeExclusionRadius": 0.0,
+        "LockOnData": {
+          "Flags": "0",
+          "LockOnDistance": 0.0,
+          "TrackingType": "invalid"
+        }
+      },
+      {
+        "Flags": "None",
+        "MarkerName": "indirect_shield_r",
+        "Size": 0.3,
+        "ConeAngle": "Degrees: 180",
+        "DamageSection": 0,
+        "Variant": -1,
+        "TargetingRelevance": 0.0,
+        "AoeExclusionRadius": 0.0,
+        "LockOnData": {
+          "Flags": "0",
+          "LockOnDistance": 0.0,
+          "TrackingType": "invalid"
+        }
+      }
+    ],
+    "CollisionRegions": [
+      {
+        "Name": "generator",
+        "CollisionRegionIndex": 0,
+        "PhysicsRegionIndex": 0,
+        "Permutations": [
+          {
+            "Name": "base",
+            "Flags": "None",
+            "CollisionPermutationIndex": 0,
+            "PhysicsPermutationIndex": 0
+          }
+        ]
+      },
+      {
+        "Name": "shield",
+        "CollisionRegionIndex": 1,
+        "PhysicsRegionIndex": 1,
+        "Permutations": [
+          {
+            "Name": "inactive",
+            "Flags": "None",
+            "CollisionPermutationIndex": 0,
+            "PhysicsPermutationIndex": 0
+          },
+          {
+            "Name": "active",
+            "Flags": "None",
+            "CollisionPermutationIndex": 1,
+            "PhysicsPermutationIndex": 1
+          }
+        ]
+      }
+    ],
+    "Nodes": [
+      {
+        "Name": "covenant_shield_generator_dep",
+        "ParentNode": -1,
+        "FirstChildNode": 1,
+        "NextSiblingNode": -1,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: -0, Y: -0, Z: -0",
+        "DefaultRotation": "I: -0, J: -0, K: -0, W: -1",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: 1, M12: 0, M13: 0, M21: 0, M22: 1, M23: 0, M31: 0, M32: 0, M33: 1, M41: 0, M42: 0, M43: 0"
+      },
+      {
+        "Name": "covshield_coverflap",
+        "ParentNode": 0,
+        "FirstChildNode": -1,
+        "NextSiblingNode": 2,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.10803152, Y: 0.0005008949, Z: 0.06337981",
+        "DefaultRotation": "I: 0.045674343, J: 3.4E-09, K: -0.9989564, W: 7.54E-08",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: -0.9958277, M12: 1.5095323E-07, M13: -0.091253355, M21: -1.5033204E-07, M22: -1, M23: -1.3680594E-08, M31: -0.091253355, M32: 9.478773E-11, M33: 0.99582773, M41: 0.11336439, M42: 0.0005008786, M43: -0.053257134"
+      },
+      {
+        "Name": "covshield_leftfin",
+        "ParentNode": 0,
+        "FirstChildNode": -1,
+        "NextSiblingNode": 3,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.09972066, Y: 0.033702314, Z: 0.01284361",
+        "DefaultRotation": "I: 1.1139E-06, J: -2.11E-08, K: -1, W: 2.47E-07",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: -1, M12: 4.9399995E-07, M13: -2.2278E-06, M21: -4.9400006E-07, M22: -1, M23: 4.219945E-08, M31: -2.2278E-06, M32: 4.220055E-08, M33: 1, M41: 0.0997207, M42: 0.033702265, M43: -0.012843389"
+      },
+      {
+        "Name": "covshield_leftflap",
+        "ParentNode": 0,
+        "FirstChildNode": -1,
+        "NextSiblingNode": 4,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.12079685, Y: 0.03669404, Z: 0.0046523907",
+        "DefaultRotation": "I: 0, J: 0, K: -0.99999726, W: -0.0023444432",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: -0.99998903, M12: -0.0046888734, M13: 0, M21: 0.0046888734, M22: -0.99998903, M23: 0, M31: 0, M32: -0, M33: 1, M41: 0.12062347, M42: 0.037260037, M43: -0.0046523907"
+      },
+      {
+        "Name": "covshield_mainflap",
+        "ParentNode": 0,
+        "FirstChildNode": -1,
+        "NextSiblingNode": 5,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.0980287, Y: 0.0004960574, Z: 0.02834",
+        "DefaultRotation": "I: 5.96E-08, J: -0, K: -1, W: 7.55E-08",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: -1, M12: 1.51E-07, M13: -1.192E-07, M21: -1.51E-07, M22: -1, M23: -8.9996E-15, M31: -1.192E-07, M32: 8.9996E-15, M33: 1, M41: 0.0980287, M42: 0.0004960426, M43: -0.02833999"
+      },
+      {
+        "Name": "covshield_rightfin",
+        "ParentNode": 0,
+        "FirstChildNode": -1,
+        "NextSiblingNode": 6,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.09972065, Y: -0.0327272, Z: 0.01284361",
+        "DefaultRotation": "I: -8.74E-08, J: -3.272E-07, K: -1, W: 7.59E-07",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: -1, M12: 1.5180001E-06, M13: 1.747995E-07, M21: -1.5179999E-06, M22: -1, M23: 6.5440014E-07, M31: 1.7480049E-07, M32: 6.543999E-07, M33: 1, M41: 0.0997206, M42: -0.03272736, M43: -0.012843606"
+      },
+      {
+        "Name": "covshield_rightflap",
+        "ParentNode": 0,
+        "FirstChildNode": -1,
+        "NextSiblingNode": -1,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.12079684, Y: -0.035412017, Z: 0.0046523907",
+        "DefaultRotation": "I: 0, J: 8.74E-08, K: -1, W: 7.55E-08",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: -1, M12: 1.51E-07, M13: 1.3197399E-14, M21: -1.51E-07, M22: -1, M23: -1.748E-07, M31: -1.3197399E-14, M32: -1.748E-07, M33: 1, M41: 0.12079683, M42: -0.035412036, M43: -0.004652397"
+      }
+    ],
+    "RuntimeNodeListChecksum": 0,
+    "ModelObjectData": [
+      {
+        "Type": "AutoGenerated",
+        "Offset": "X: -0.268689, Y: 0.00248748, Z: 0.423502",
+        "Radius": 1.10794
+      }
+    ],
+    "PrimaryDialogue": null,
+    "SecondaryDialogue": null,
+    "Flags": "InconsequentialTarget",
+    "DefaultDialogueEffect": "invalid",
+    "RenderOnlyNodeFlags": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "RenderOnlySectionFlags": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "RuntimeFlags": "ContainsRuntimeNodes",
+    "ScenarioLoadParameters": [],
+    "ShadowDetail": "AmbientOcclusion",
+    "ShadowBounces": "ZeroBounces",
+    "ShadowCastOverrides": [],
+    "ShadowReceiveOverrides": [],
+    "OcclusionSpheres": [],
+    "ShieldImpactThirdPerson": null,
+    "ShieldImpactFirstPerson": null,
+    "OvershieldThirdPerson": null,
+    "OvershieldFirstPerson": null
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "TagName": "objects\\vehicles\\scorpion\\turrets\\anti_infantry\\anti_infantry",
+  "TagType": "model",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "RenderModel": {
+      "Type": "render_model",
+      "Name": "objects\\vehicles\\scorpion\\turrets\\anti_infantry\\anti_infantry",
+      "Generate": false
+    },
+    "CollisionModel": {
+      "Type": "collision_model",
+      "Name": "objects\\vehicles\\scorpion\\turrets\\anti_infantry\\anti_infantry",
+      "Generate": false
+    },
+    "Animation": {
+      "Type": "model_animation_graph",
+      "Name": "objects\\vehicles\\scorpion\\turrets\\anti_infantry\\anti_infantry",
+      "Generate": false
+    },
+    "PhysicsModel": {
+      "Type": "physics_model",
+      "Name": "objects\\vehicles\\scorpion\\turrets\\anti_infantry\\anti_infantry",
+      "Generate": false
+    },
+    "DisappearDistance": 33.50312,
+    "BeginFadeDistance": 25.12734,
+    "AnimationDistance": 0.0,
+    "ShadowFadeDistance": 0.0,
+    "InstanceDisappearDistance": 0.0,
+    "LodModel": null,
+    "Variants": [
+      {
+        "Name": "default",
+        "Voice": null,
+        "DialogueEffect": "invalid",
+        "AiCharacter": "None",
+        "ModelRegionIndices": [
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "Regions": [
+          {
+            "Name": "anti_infantry",
+            "RenderModelRegionIndex": 0,
+            "RuntimeFlags": 0,
+            "ParentVariant": -1,
+            "Permutations": [
+              {
+                "Name": "base",
+                "RenderModelPermutationIndex": 0,
+                "Flags": "None",
+                "Probability": 1.0,
+                "States": [
+                  {
+                    "Name": "base",
+                    "ModelPermutationIndex": 0,
+                    "PropertyFlags": "None",
+                    "State2": "MinorDamage",
+                    "LoopingEffect": null,
+                    "LoopingEffectMarkerName": "invalid",
+                    "InitialProbability": 0.0
+                  },
+                  {
+                    "Name": "medium",
+                    "ModelPermutationIndex": 2,
+                    "PropertyFlags": "None",
+                    "State2": "MediumDamage",
+                    "LoopingEffect": null,
+                    "LoopingEffectMarkerName": "invalid",
+                    "InitialProbability": 0.0
+                  },
+                  {
+                    "Name": "major",
+                    "ModelPermutationIndex": 1,
+                    "PropertyFlags": "None",
+                    "State2": "MajorDamage",
+                    "LoopingEffect": null,
+                    "LoopingEffectMarkerName": "invalid",
+                    "InitialProbability": 0.0
+                  },
+                  {
+                    "Name": "destroyed",
+                    "ModelPermutationIndex": 3,
+                    "PropertyFlags": "None",
+                    "State2": "Destroyed",
+                    "LoopingEffect": null,
+                    "LoopingEffectMarkerName": "invalid",
+                    "InitialProbability": 0.0
+                  }
+                ],
+                "RuntimeStatePermutationIndices": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "SortOrder": "NoSorting"
+          }
+        ],
+        "Objects": [],
+        "InstanceGroupIndex": -1
+      }
+    ],
+    "RegionSort": [],
+    "InstanceGroups": [],
+    "Materials": [
+      {
+        "MaterialName": "hard_metal_thick",
+        "MaterialType": "Dirt",
+        "DamageSectionIndex": 0,
+        "RuntimeCollisionMaterialIndex": 0,
+        "RuntimeDamagerMaterialIndex": -1,
+        "GlobalMaterialName": "hard_metal_thick_hum",
+        "GlobalMaterialIndex": 70
+      }
+    ],
+    "NewDamageInfo": [
+      {
+        "Flags": "CannotDieFromDamage",
+        "GlobalIndirectMaterialName": "hard_metal_thick_hum",
+        "IndirectDamageSection": -1,
+        "CollisionDamageReportingType": {
+          "HaloOnline": "Guardians"
+        },
+        "ResponseDamageReportingType": {
+          "HaloOnline": "Guardians"
+        },
+        "MaximumVitality": 150.0,
+        "MinStunDamage": 0.0,
+        "StunTime": 0.1,
+        "RechargeTime": 0.3,
+        "RechargeFraction": 1.0,
+        "MaxShieldVitality": 0.0,
+        "GlobalShieldMaterialName": "invalid",
+        "ShieldMinStunDamage": 0.0,
+        "ShieldStunTime": 0.0,
+        "ShieldRechargeTime": 0.0,
+        "ShieldDamagedThreshold": 0.0,
+        "ShieldDamagedEffect": null,
+        "ShieldDepletedEffect": null,
+        "ShieldRechargingEffect": null,
+        "DamageSections": [
+          {
+            "Name": "main",
+            "Flags": "TakesFullDamageWhenObjectDies, CannotDieWithRiders",
+            "VitalityPercentage": 1.0,
+            "InstantResponses": [
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "None",
+                "DamageThreshold": 0.75,
+                "PrimaryTransitionEffect": null,
+                "SecondaryTransitionEffect": null,
+                "TransitionDamageEffect": null,
+                "Region": "anti_infantry",
+                "NewState": "MinorDamage",
+                "RuntimeRegionIndex": 0,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "invalid",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.0,
+                "DelayEffect": null,
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "invalid",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              },
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "None",
+                "DamageThreshold": 0.5,
+                "PrimaryTransitionEffect": null,
+                "SecondaryTransitionEffect": null,
+                "TransitionDamageEffect": null,
+                "Region": "anti_infantry",
+                "NewState": "MediumDamage",
+                "RuntimeRegionIndex": 0,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "invalid",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.0,
+                "DelayEffect": null,
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "invalid",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              },
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "None",
+                "DamageThreshold": 0.25,
+                "PrimaryTransitionEffect": null,
+                "SecondaryTransitionEffect": null,
+                "TransitionDamageEffect": null,
+                "Region": "anti_infantry",
+                "NewState": "MajorDamage",
+                "RuntimeRegionIndex": 0,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "invalid",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.0,
+                "DelayEffect": null,
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "invalid",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              },
+              {
+                "ResponseType": "RecievesAllDamage",
+                "ConstraintDamageType": "None",
+                "ConstraintGroupName": "invalid",
+                "Flags": "None",
+                "DamageThreshold": 0.0,
+                "PrimaryTransitionEffect": {
+                  "Type": "effect",
+                  "Name": "fx\\scenery_fx\\destruction\\human_mech_break_medium\\human_mech_break_medium",
+                  "Generate": false
+                },
+                "SecondaryTransitionEffect": {
+                  "Type": "effect",
+                  "Name": "objects\\vehicles\\scorpion\\fx\\destruction\\trans_anti_infantry_destroyed",
+                  "Generate": false
+                },
+                "TransitionDamageEffect": null,
+                "Region": "anti_infantry",
+                "NewState": "Destroyed",
+                "RuntimeRegionIndex": 0,
+                "SecondaryRegion": "invalid",
+                "SecondaryNewState": "Default",
+                "SecondaryRuntimeRegionIndex": -1,
+                "DestroyInstanceGroup": -1,
+                "CustomResponseBehavior": "PlaysAlways",
+                "CustomResponseLabel": "invalid",
+                "EffectMarkerName": "fx_turret_damage",
+                "DamageEffectMarkerName": "invalid",
+                "ResponseDelay": 0.0,
+                "DelayEffect": null,
+                "DelayEffectMarkerName": "invalid",
+                "EjectingSeatLabel": "scorpion_g",
+                "SkipFraction": 0.0,
+                "DestroyedChildObjectMarkerName": "invalid",
+                "TotalDamageThreshold": 0.0
+              }
+            ],
+            "StunTime": 0.0,
+            "RechargeTime": 0.0,
+            "RuntimeRechargeVelocity": 0.0,
+            "ResurrectionRestoredRegionName": "invalid",
+            "ResurrectionRegionRuntimeIndex": -1
+          }
+        ],
+        "Nodes": [
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          },
+          {
+            "RuntimeDamagePart": -1
+          }
+        ],
+        "GlobalShieldMaterialIndex": -1,
+        "GlobalIndirectMaterialIndex": 70,
+        "RuntimeShieldRechargeVelocity": 1000.0,
+        "RuntimeHealthRechargeVelocity": 3.3333333,
+        "DamageSeats": [
+          {
+            "SeatLabel": "scorpion_g",
+            "DirectDamageScale": 0.8,
+            "DamageTransferFallOffRadius": 0.4,
+            "MaximumTransferDamageScale": 0.3,
+            "MinimumTransferDamageScale": 0.1,
+            "RegionSpecificDamage": [
+              {
+                "DamageRegionName": "driver_hull",
+                "RuntimeDamageRegionIndex": -1,
+                "DirectDamageScaleMinor": 0.8,
+                "MaxTransferScaleMinor": 0.4,
+                "MinTransferScaleMinor": 0.2,
+                "DirectDamageScaleMedium": 0.9,
+                "MaxTransferScaleMedium": 0.5,
+                "MinTransferScaleMedium": 0.25,
+                "DirectDamageScaleMajor": 1.0,
+                "MaxTransferScaleMajor": 0.7,
+                "MinTransferScaleMajor": 0.3
+              }
+            ]
+          }
+        ],
+        "DamageConstraints": []
+      }
+    ],
+    "Targets": [],
+    "CollisionRegions": [
+      {
+        "Name": "anti_infantry",
+        "CollisionRegionIndex": 0,
+        "PhysicsRegionIndex": 0,
+        "Permutations": [
+          {
+            "Name": "base",
+            "Flags": "None",
+            "CollisionPermutationIndex": 0,
+            "PhysicsPermutationIndex": 0
+          },
+          {
+            "Name": "major",
+            "Flags": "None",
+            "CollisionPermutationIndex": 1,
+            "PhysicsPermutationIndex": 0
+          },
+          {
+            "Name": "medium",
+            "Flags": "None",
+            "CollisionPermutationIndex": 0,
+            "PhysicsPermutationIndex": 0
+          },
+          {
+            "Name": "destroyed",
+            "Flags": "None",
+            "CollisionPermutationIndex": 2,
+            "PhysicsPermutationIndex": 0
+          }
+        ]
+      }
+    ],
+    "Nodes": [
+      {
+        "Name": "root",
+        "ParentNode": -1,
+        "FirstChildNode": 1,
+        "NextSiblingNode": -1,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0, Y: 6.709099E-05, Z: 0.00463133",
+        "DefaultRotation": "I: -0, J: -0, K: -0, W: -1",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: 1, M12: 0, M13: 0, M21: 0, M22: 1, M23: 0, M31: 0, M32: 0, M33: 1, M41: -0, M42: -6.709099E-05, M43: -0.00463133"
+      },
+      {
+        "Name": "rotation",
+        "ParentNode": 0,
+        "FirstChildNode": 2,
+        "NextSiblingNode": -1,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0, Y: 9.53878E-09, Z: -0.0045821965",
+        "DefaultRotation": "I: 0, J: 0, K: 0, W: -1",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: 1, M12: 0, M13: 0, M21: 0, M22: 1, M23: 0, M31: 0, M32: 0, M33: 1, M41: -0, M42: -6.7100525E-05, M43: -4.913332E-05"
+      },
+      {
+        "Name": "gun",
+        "ParentNode": 1,
+        "FirstChildNode": -1,
+        "NextSiblingNode": -1,
+        "ImportNodeIndex": 0,
+        "DefaultTranslation": "X: 0.1629138, Y: -4.773028E-09, Z: 0.069855265",
+        "DefaultRotation": "I: 0, J: 0, K: 0, W: -1",
+        "DefaultScale": 1.0,
+        "Inverse": "M11: 1, M12: 0, M13: 0, M21: 0, M22: 1, M23: 0, M31: 0, M32: 0, M33: 1, M41: -0.1629138, M42: -6.709575E-05, M43: -0.0699044"
+      }
+    ],
+    "RuntimeNodeListChecksum": 0,
+    "ModelObjectData": [
+      {
+        "Type": "AutoGenerated",
+        "Offset": "X: 0.112119, Y: -2.12267E-05, Z: 0.126559",
+        "Radius": 0.418789
+      }
+    ],
+    "PrimaryDialogue": null,
+    "SecondaryDialogue": null,
+    "Flags": "None",
+    "DefaultDialogueEffect": "invalid",
+    "RenderOnlyNodeFlags": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "RenderOnlySectionFlags": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "RuntimeFlags": "None",
+    "ScenarioLoadParameters": [],
+    "ShadowDetail": "Linear",
+    "ShadowBounces": "TwoBounces",
+    "ShadowCastOverrides": [],
+    "ShadowReceiveOverrides": [
+      {
+        "Region": "anti_infantry",
+        "ShadowType": "PRTSelfShadowOnly"
+      }
+    ],
+    "OcclusionSpheres": [],
+    "ShieldImpactThirdPerson": null,
+    "ShieldImpactFirstPerson": null,
+    "OvershieldThirdPerson": null,
+    "OvershieldFirstPerson": null
+  }
+}

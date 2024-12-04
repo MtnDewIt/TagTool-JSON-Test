@@ -1,0 +1,351 @@
+{
+  "TagName": "fx\\particles\\material\\concrete\\fragments_concrete",
+  "TagType": "particle",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "Flags": "HasAttachmentOnCollision, HasAttachmentOnDeath",
+    "Attachments": [
+      {
+        "Type": {
+          "Type": "sound",
+          "Name": "sound\\materials\\particles\\rocks\\rocks_small",
+          "Generate": false
+        },
+        "Trigger": "Collision",
+        "Flags": 0,
+        "PrimaryScale": "ParticleAge",
+        "SecondaryScale": "ParticleAge"
+      },
+      {
+        "Type": {
+          "Type": "sound",
+          "Name": "sound\\materials\\particles\\rocks\\rocks_small",
+          "Generate": false
+        },
+        "Trigger": "Death",
+        "Flags": 0,
+        "PrimaryScale": "ParticleAge",
+        "SecondaryScale": "ParticleAge"
+      }
+    ],
+    "AppearanceFlags": "RandomUMirror, RandomVMirror, RandomStartingRotation, TintFromLightmap, Fogged",
+    "ParticleBillboardStyle": "ScreenFacing",
+    "FirstSequenceIndex": 0,
+    "SequenceCount": 4,
+    "CenterOffset": "X: 0, Y: 0",
+    "Curvature": 0.0,
+    "AngleFadeRange": 30.0,
+    "AngleFadeCutoff": 0.0,
+    "MotionBlurTranslationScale": 1.0,
+    "MotionBlurRotationScale": 1.0,
+    "MotionBlurAspectScale": 0.5,
+    "RenderMethod": {
+      "BaseRenderMethod": {
+        "Type": "render_method_definition",
+        "Name": "shaders\\particle",
+        "Generate": false
+      },
+      "Options": [
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 3
+        },
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 1
+        },
+        {
+          "OptionIndex": 0
+        },
+        {
+          "OptionIndex": 1
+        }
+      ],
+      "Parameters": [],
+      "ShaderProperties": [
+        {
+          "Template": {
+            "Type": "render_method_template",
+            "Name": "shaders\\particle_templates\\_0_3_0_0_0_0_0_1_0_1",
+            "Generate": false
+          },
+          "TextureConstants": [
+            {
+              "Bitmap": {
+                "Type": "bitmap",
+                "Name": "fx\\particles\\material\\_bitmaps\\concrete_chips",
+                "Generate": false
+              },
+              "BitmapIndex": 0,
+              "SamplerAddressMode": {
+                "SamplerAddressUV": 17
+              },
+              "FilterMode": "Trilinear",
+              "ExternTextureMode": "UseBitmapAsNormal",
+              "TextureTransformConstantIndex": -1,
+              "TextureTransformOverlayIndices": {
+                "Integer": 0
+              }
+            }
+          ],
+          "RealConstants": [
+            {
+              "Values": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "Values": [
+                0.019607844,
+                0.019607844,
+                0.019607844,
+                1.0
+              ]
+            },
+            {
+              "Values": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "Values": [
+                3.0,
+                3.0,
+                3.0,
+                3.0
+              ]
+            },
+            {
+              "Values": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "Values": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "Values": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "Values": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "Values": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          ],
+          "IntegerConstants": [],
+          "BooleanConstants": 0,
+          "EntryPoints": [],
+          "Passes": [],
+          "RoutingInfo": [],
+          "Functions": [],
+          "BlendMode": "AlphaBlend",
+          "Flags": "None",
+          "ImSoFiredPad": 0,
+          "QueryableProperties": [
+            -1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "RenderFlags": "None",
+      "SortLayer": "Normal",
+      "Version": 0,
+      "CustomFogSettingIndex": 0,
+      "PredictionAtomIndex": -1
+    },
+    "AspectRatio": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleCorrelationRandom1",
+      "OutputModifier": "None",
+      "OutputModifierInput": "ParticleRandom",
+      "Function": {
+        "Data": "ATAAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "RuntimeMConstantValue": 1.0,
+      "RuntimeMFlags": "Bit4, IsConstant, ConstantPerEntity, ConstantOverTime"
+    },
+    "Color": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleCorrelationRandom1",
+      "OutputModifier": "Plus",
+      "OutputModifierInput": "ParticleAge",
+      "Function": {
+        "Data": "ATUCANPu+wAAAAAAAAAAAMfCuwBI4fo+AAAAPwAAAAA="
+      },
+      "RuntimeMConstantValue": 0.0,
+      "RuntimeMFlags": "None"
+    },
+    "Intensity": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleCorrelationRandom1",
+      "OutputModifier": "None",
+      "OutputModifierInput": "ParticleAge",
+      "Function": {
+        "Data": "ATAAAAAAwD8AAMA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "RuntimeMConstantValue": 1.5,
+      "RuntimeMFlags": "IsConstant, ConstantPerEntity, ConstantOverTime"
+    },
+    "Alpha": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleCorrelationRandom1",
+      "OutputModifier": "None",
+      "OutputModifierInput": "ParticleCorrelationRandom2",
+      "Function": {
+        "Data": "ATQAAAAAgD8AAIA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+      },
+      "RuntimeMConstantValue": 1.0,
+      "RuntimeMFlags": "Bit4, IsConstant, ConstantPerEntity, ConstantOverTime"
+    },
+    "AnimationFlags": "None",
+    "FrameIndex": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleCorrelationRandom2",
+      "OutputModifier": "None",
+      "OutputModifierInput": "ParticleCorrelationRandom2",
+      "Function": {
+        "Data": "ATUAAAAAAAAAAIA/AAAAAAAAAABI4fo+AAAAPwAAAAA="
+      },
+      "RuntimeMConstantValue": 0.0,
+      "RuntimeMFlags": "None"
+    },
+    "AnimationRate": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleCorrelationRandom1",
+      "OutputModifier": "None",
+      "OutputModifierInput": "ParticleRandom",
+      "Function": {
+        "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "RuntimeMConstantValue": 0.0,
+      "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+    },
+    "PaletteAnimation": {
+      "InputVariable": "ParticleAge",
+      "RangeVariable": "ParticleRandom",
+      "OutputModifier": "None",
+      "OutputModifierInput": "ParticleAge",
+      "Function": {
+        "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "RuntimeMConstantValue": 0.0,
+      "RuntimeMFlags": "Bit3, IsConstant, ConstantPerEntity, ConstantOverTime"
+    },
+    "ParticleModel": null,
+    "RuntimeMUsedParticleStates": "Age, Random1, Random2",
+    "RuntimeMConstantPerParticleProperties": 109,
+    "RuntimeMConstantOverTimeProperties": 0,
+    "RuntimeMSprites": [
+      {
+        "RuntimeGpuSpriteArray": [
+          -0.9824562,
+          -1.0526316,
+          1.9649123,
+          2.0
+        ]
+      }
+    ],
+    "RuntimeMFrames": [
+      {
+        "RuntimeMCount": [
+          4.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "RuntimeMCount": [
+          0.0,
+          0.46875,
+          0.4375,
+          0.4453125
+        ]
+      },
+      {
+        "RuntimeMCount": [
+          0.4375,
+          0.46875,
+          0.2578125,
+          0.3125
+        ]
+      },
+      {
+        "RuntimeMCount": [
+          0.4453125,
+          0.0,
+          0.4453125,
+          0.453125
+        ]
+      },
+      {
+        "RuntimeMCount": [
+          0.0,
+          0.0,
+          0.4453125,
+          0.46875
+        ]
+      }
+    ]
+  }
+}
