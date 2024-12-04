@@ -1,0 +1,919 @@
+{
+  "TagName": "levels\\multi\\riverworld\\fx\\tower_pulse\\projectile",
+  "TagType": "contrail_system",
+  "Generate": false,
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "Contrails": [
+      {
+        "Name": "contrail_0",
+        "OriginFadeRange": 3.0,
+        "OriginFadeCutoff": 0.5,
+        "EdgeFadeRange": 0.0,
+        "EdgeFadeCutoff": 0.0,
+        "LodInDistance": 0.0,
+        "LodFeatherInDistance": 0.0,
+        "LodOutDistance": 0.0,
+        "LodFeatherOutDistance": 0.0,
+        "EmissionRate": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ContrailRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ContrailLod",
+          "MappingFunction": {
+            "Data": "ATQAAAAA8EEAAPBBAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 30.0,
+          "RuntimeMFlags": -32
+        },
+        "ProfileLifespan": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAoD8AAKA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 1.25,
+          "RuntimeMFlags": -32
+        },
+        "ProfileSelfAcceleration": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -20,
+          "StartingInterpolant": "I: 0, J: 0, K: 0",
+          "EndingInterpolant": "I: 0, J: 0, K: 0"
+        },
+        "ProfileSize": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAgD8AAABAAAAAAAAAAAAAAAAAAAAAABQAAAABAAAABAAAzf//f38AAIA/AAAAAA=="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfileOffset": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -23,
+          "StartingInterpolant": "X: 0, Y: 0",
+          "EndingInterpolant": "X: 0, Y: 0"
+        },
+        "ProfileRotation": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileRotationRate": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "AppearanceFlags": "OriginFaded",
+        "ProfileShape": "AlignedRibbon",
+        "NumberOfNgonSides": 0,
+        "RenderMethod": {
+          "BaseRenderMethod": {
+            "Type": "render_method_definition",
+            "Name": "shaders\\contrail",
+            "Generate": false
+          },
+          "Options": [
+            {
+              "OptionIndex": 2
+            },
+            {
+              "OptionIndex": 8
+            },
+            {
+              "OptionIndex": 1
+            },
+            {
+              "OptionIndex": 0
+            }
+          ],
+          "Parameters": [],
+          "ShaderProperties": [
+            {
+              "Template": {
+                "Type": "render_method_template",
+                "Name": "shaders\\contrail_templates\\_2_8_1_0",
+                "Generate": false
+              },
+              "TextureConstants": [
+                {
+                  "Bitmap": {
+                    "Type": "bitmap",
+                    "Name": "fx\\contrails\\_bitmaps\\energy_braids",
+                    "Generate": false
+                  },
+                  "BitmapIndex": 0,
+                  "SamplerAddressMode": {
+                    "SamplerAddressUV": 0
+                  },
+                  "FilterMode": "Trilinear",
+                  "ExternTextureMode": "UseBitmapAsNormal",
+                  "TextureTransformConstantIndex": -1,
+                  "TextureTransformOverlayIndices": {
+                    "Integer": 0
+                  }
+                },
+                {
+                  "Bitmap": {
+                    "Type": "bitmap",
+                    "Name": "fx\\contrails\\_gradients\\valhalla_tower_beam",
+                    "Generate": false
+                  },
+                  "BitmapIndex": 0,
+                  "SamplerAddressMode": {
+                    "SamplerAddressUV": 17
+                  },
+                  "FilterMode": "Trilinear",
+                  "ExternTextureMode": "UseBitmapAsNormal",
+                  "TextureTransformConstantIndex": -1,
+                  "TextureTransformOverlayIndices": {
+                    "Integer": 0
+                  }
+                },
+                {
+                  "Bitmap": {
+                    "Type": "bitmap",
+                    "Name": "fx\\contrails\\_bitmaps\\energy_braids",
+                    "Generate": false
+                  },
+                  "BitmapIndex": 0,
+                  "SamplerAddressMode": {
+                    "SamplerAddressUV": 0
+                  },
+                  "FilterMode": "Trilinear",
+                  "ExternTextureMode": "UseBitmapAsNormal",
+                  "TextureTransformConstantIndex": -1,
+                  "TextureTransformOverlayIndices": {
+                    "Integer": 0
+                  }
+                }
+              ],
+              "RealConstants": [],
+              "IntegerConstants": [],
+              "BooleanConstants": 0,
+              "EntryPoints": [],
+              "Passes": [],
+              "RoutingInfo": [],
+              "Functions": [],
+              "BlendMode": "AddSrcTimesSrcalpha",
+              "Flags": "None",
+              "ImSoFiredPad": 0,
+              "QueryableProperties": [
+                -1,
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+              ]
+            }
+          ],
+          "RenderFlags": "IgnoreFog",
+          "SortLayer": "Normal",
+          "Version": 0,
+          "CustomFogSettingIndex": 0,
+          "PredictionAtomIndex": -1
+        },
+        "Tiling": "X: 0.15, Y: 1",
+        "ScrollSpeed": "X: 0, Y: 0",
+        "ProfileColor": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQCAP///wAAAIA/AAAAAP9qIAAAAAAAAAAAADQAAAACAAAABwAAzeF69D4T6tDAh5POQAAAAAAAAAAABwAAAP//f3+tAjhApvH/wEjf60Dju5+/"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfileAlpha": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ContrailLod",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAEQAAAADAAAABAAAAK5HYT1ddJFBAAAAAAcAAAAK10M/ILchwD6ADUCDj2G+m7+APwcAAAD//39/HwsDQxwdrMOJqZND80ekwg=="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfileSecondaryAlpha": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 1.0,
+          "RuntimeMFlags": -16
+        },
+        "ProfileBlackPoint": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAADQAAAACAAAABwAAzaRw/T5kT1FAAMD6PgAAAAAAAAAABwAAAP//f384m3RApOU2wd9WNkEiYDLA"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfilePalette": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileIntensity": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAgD8AAABAAAAAAAAAAAAAAAAAAAAAADQAAAACAAAABwAAzSlcjz4SxxvBBJgcwAAAAAAAAIA/BwAAAP//f38mA3jAzbYfQT1rBcHn1A5A"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "RuntimeMConstantPerProfileProperties": 2679,
+        "RuntimeMUsedStates": 1,
+        "RuntimeMGpuData": {
+          "Properties": [
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 8.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 26.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 131072",
+              "Magnitude": 44.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 393264",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 1, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 786432",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 1048576",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            }
+          ],
+          "Functions": [
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 4, Green: 3.4028235E+38, Blue: 1",
+                  "Magnitude": 2.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 1, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.4775, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 1, Blue: 1",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -6.5285735, Green: 6.4555087, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 2.8751633, Green: -7.998248, Blue: 7.371006",
+                  "Magnitude": -1.2479213
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 4, Green: 0.055, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 18.181818, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.765, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -2.526802, Green: 2.2109523, Blue: -0.22027402",
+                  "Magnitude": 1.0058473
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 131.04344, Green: -344.22742, Blue: 295.3245",
+                  "Magnitude": -82.140526
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.495, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 3.2704706, Green: 0.4897461, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 3.8219738, Green: -11.431065, Blue: 11.396209",
+                  "Magnitude": -2.7871175
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 0.28, Blue: 1",
+                  "Magnitude": 2.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -9.736101, Green: -2.4467783, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -3.8751922, Green: 9.982129, Blue: -8.338681",
+                  "Magnitude": 2.2317445
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            }
+          ],
+          "Colors": [
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 1, Green: 1, Blue: 1",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0.1254902, Green: 0.41568628, Blue: 1",
+              "Magnitude": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "Name": "contrail_0",
+        "OriginFadeRange": 3.0,
+        "OriginFadeCutoff": 0.1,
+        "EdgeFadeRange": 0.0,
+        "EdgeFadeCutoff": 0.0,
+        "LodInDistance": 0.0,
+        "LodFeatherInDistance": 0.0,
+        "LodOutDistance": 0.0,
+        "LodFeatherOutDistance": 0.0,
+        "EmissionRate": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ContrailRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ContrailLod",
+          "MappingFunction": {
+            "Data": "ATQAAAAAoEAAAKBAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 5.0,
+          "RuntimeMFlags": -32
+        },
+        "ProfileLifespan": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAwD8AAMA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 1.5,
+          "RuntimeMFlags": -32
+        },
+        "ProfileSelfAcceleration": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -20,
+          "StartingInterpolant": "I: 0, J: 0, K: 0",
+          "EndingInterpolant": "I: 0, J: 0, K: 0"
+        },
+        "ProfileSize": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAADMzsz4zM7M+AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.35,
+          "RuntimeMFlags": -32
+        },
+        "ProfileOffset": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -23,
+          "StartingInterpolant": "X: 0, Y: 0",
+          "EndingInterpolant": "X: 0, Y: 0"
+        },
+        "ProfileRotation": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileRotationRate": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "AppearanceFlags": "OriginFaded",
+        "ProfileShape": "AlignedRibbon",
+        "NumberOfNgonSides": 0,
+        "RenderMethod": {
+          "BaseRenderMethod": {
+            "Type": "render_method_definition",
+            "Name": "shaders\\contrail",
+            "Generate": false
+          },
+          "Options": [
+            {
+              "OptionIndex": 0
+            },
+            {
+              "OptionIndex": 8
+            },
+            {
+              "OptionIndex": 0
+            },
+            {
+              "OptionIndex": 0
+            }
+          ],
+          "Parameters": [],
+          "ShaderProperties": [
+            {
+              "Template": {
+                "Type": "render_method_template",
+                "Name": "shaders\\contrail_templates\\_0_8_0_0",
+                "Generate": false
+              },
+              "TextureConstants": [
+                {
+                  "Bitmap": {
+                    "Type": "bitmap",
+                    "Name": "fx\\contrails\\_bitmaps\\split_beam",
+                    "Generate": false
+                  },
+                  "BitmapIndex": 0,
+                  "SamplerAddressMode": {
+                    "SamplerAddressUV": 0
+                  },
+                  "FilterMode": "Trilinear",
+                  "ExternTextureMode": "UseBitmapAsNormal",
+                  "TextureTransformConstantIndex": -1,
+                  "TextureTransformOverlayIndices": {
+                    "Integer": 0
+                  }
+                }
+              ],
+              "RealConstants": [],
+              "IntegerConstants": [],
+              "BooleanConstants": 0,
+              "EntryPoints": [],
+              "Passes": [],
+              "RoutingInfo": [],
+              "Functions": [],
+              "BlendMode": "AddSrcTimesSrcalpha",
+              "Flags": "None",
+              "ImSoFiredPad": 0,
+              "QueryableProperties": [
+                -1,
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+              ]
+            }
+          ],
+          "RenderFlags": "None",
+          "SortLayer": "Normal",
+          "Version": 0,
+          "CustomFogSettingIndex": 0,
+          "PredictionAtomIndex": -1
+        },
+        "Tiling": "X: 1, Y: 1",
+        "ScrollSpeed": "X: 0, Y: 0",
+        "ProfileColor": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ContrailAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQBAP9dMAAAAIA/AAAAAAAIuQAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileAlpha": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ContrailLod",
+          "MappingFunction": {
+            "Data": "CDQAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAABwAAAABAAAABwAAAP//f38kUzI/kEzJvm7Wpr8AAIA/"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "ProfileSecondaryAlpha": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 1.0,
+          "RuntimeMFlags": -16
+        },
+        "ProfileBlackPoint": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfilePalette": {
+          "InputVariable": "ContrailAge",
+          "RangeVariable": "ProfileRandom",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "ATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": -24
+        },
+        "ProfileIntensity": {
+          "InputVariable": "ProfileAge",
+          "RangeVariable": "ProfileAge",
+          "OutputModifier": "Unknown",
+          "OutputModifierInput": "ProfileAge",
+          "MappingFunction": {
+            "Data": "CDQAAAAAgD8AAABAAAAAAAAAAAAAAAAAAAAAABwAAAABAAAABwAAAP//f38wjmO+jOO4P+M4DsAAAIA/"
+          },
+          "RuntimeMConstantValue": 0.0,
+          "RuntimeMFlags": 0
+        },
+        "RuntimeMConstantPerProfileProperties": 3839,
+        "RuntimeMUsedStates": 1,
+        "RuntimeMGpuData": {
+          "Properties": [
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 8.0
+            },
+            {
+              "Color": "Red: 0.35, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 26.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 36.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 48",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 1, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 131072",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 2097152, Blue: 0",
+              "Magnitude": 0.0
+            }
+          ],
+          "Functions": [
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 0",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: 0.6965811, Green: -0.39316225, Blue: -1.3034189",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            },
+            {
+              "Elements": [
+                {
+                  "Color": "Red: 7, Green: 3.4028235E+38, Blue: 1",
+                  "Magnitude": 2.0
+                },
+                {
+                  "Color": "Red: 52, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                },
+                {
+                  "Color": "Red: -0.22222209, Green: 1.4444442, Blue: -2.222222",
+                  "Magnitude": 1.0
+                },
+                {
+                  "Color": "Red: 0, Green: 0, Blue: 0",
+                  "Magnitude": 0.0
+                }
+              ]
+            }
+          ],
+          "Colors": [
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0, Green: 0, Blue: 0",
+              "Magnitude": 0.0
+            },
+            {
+              "Color": "Red: 0.1882353, Green: 0.3647059, Blue: 1",
+              "Magnitude": 0.0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
