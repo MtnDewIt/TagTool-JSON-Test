@@ -1,0 +1,289 @@
+{
+  "TagName": "shaders\\glass",
+  "TagType": "render_method_definition",
+  "TagVersion": "HaloOnlineED",
+  "Bitmaps": null,
+  "Animations": null,
+  "RenderGeometry": null,
+  "BlamScriptResource": null,
+  "StructureBsp": null,
+  "Sounds": null,
+  "UnicodeStrings": null,
+  "TagData": {
+    "GlobalOptions": {
+      "Type": "render_method_option",
+      "Name": "shaders\\shader_options\\global_shader_options"
+    },
+    "Categories": [
+      {
+        "Name": "albedo",
+        "ShaderOptions": [
+          {
+            "Name": "map",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\albedo_default"
+            },
+            "VertexFunction": "calc_albedo_default_vs",
+            "PixelFunction": "calc_albedo_default_ps"
+          }
+        ],
+        "VertexFunction": "calc_albedo_vs",
+        "PixelFunction": "calc_albedo_ps"
+      },
+      {
+        "Name": "bump_mapping",
+        "ShaderOptions": [
+          {
+            "Name": "off",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_off"
+            },
+            "VertexFunction": "calc_bumpmap_off_vs",
+            "PixelFunction": "calc_bumpmap_off_ps"
+          },
+          {
+            "Name": "standard",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_default"
+            },
+            "VertexFunction": "calc_bumpmap_default_vs",
+            "PixelFunction": "calc_bumpmap_default_ps"
+          },
+          {
+            "Name": "detail",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_detail"
+            },
+            "VertexFunction": "calc_bumpmap_detail_vs",
+            "PixelFunction": "calc_bumpmap_detail_ps"
+          },
+          {
+            "Name": "detail_blend",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_detail_blend"
+            },
+            "VertexFunction": "calc_bumpmap_detail_blend_vs",
+            "PixelFunction": "calc_bumpmap_detail_blend_ps"
+          },
+          {
+            "Name": "three_detail_blend",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_three_detail_blend"
+            },
+            "VertexFunction": "calc_bumpmap_three_detail_blend_vs",
+            "PixelFunction": "calc_bumpmap_three_detail_blend_ps"
+          },
+          {
+            "Name": "standard_wrinkle",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_default_wrinkle"
+            },
+            "VertexFunction": "calc_bumpmap_default_wrinkle_vs",
+            "PixelFunction": "calc_bumpmap_default_wrinkle_ps"
+          },
+          {
+            "Name": "detail_wrinkle",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\bump_detail_wrinkle"
+            },
+            "VertexFunction": "calc_bumpmap_detail_wrinkle_vs",
+            "PixelFunction": "calc_bumpmap_detail_wrinkle_ps"
+          }
+        ],
+        "VertexFunction": "calc_bumpmap_vs",
+        "PixelFunction": "calc_bumpmap_ps"
+      },
+      {
+        "Name": "material_model",
+        "ShaderOptions": [
+          {
+            "Name": "two_lobe_phong_reach",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\glass_options\\glass_specular_option"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "two_lobe_phong_reach"
+          }
+        ],
+        "VertexFunction": "invalid",
+        "PixelFunction": "material_type"
+      },
+      {
+        "Name": "environment_mapping",
+        "ShaderOptions": [
+          {
+            "Name": "none",
+            "Option": null,
+            "VertexFunction": "invalid",
+            "PixelFunction": "none"
+          },
+          {
+            "Name": "per_pixel",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\env_map_per_pixel"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "per_pixel"
+          },
+          {
+            "Name": "dynamic",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\env_map_dynamic"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "dynamic"
+          },
+          {
+            "Name": "from_flat_texture",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\env_map_from_flat_texture"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "from_flat_texture"
+          }
+        ],
+        "VertexFunction": "invalid",
+        "PixelFunction": "envmap_type"
+      },
+      {
+        "Name": "wetness",
+        "ShaderOptions": [
+          {
+            "Name": "simple",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\wetness_options\\wetness_simple"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "calc_wetness_simple_ps"
+          },
+          {
+            "Name": "flood",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\wetness_options\\wetness_flood"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "calc_wetness_flood_ps"
+          }
+        ],
+        "VertexFunction": "invalid",
+        "PixelFunction": "calc_wetness_ps"
+      },
+      {
+        "Name": "alpha_blend_source",
+        "ShaderOptions": [
+          {
+            "Name": "from_albedo_alpha_without_fresnel",
+            "Option": null,
+            "VertexFunction": "invalid",
+            "PixelFunction": "albedo_alpha_without_fresnel"
+          },
+          {
+            "Name": "from_albedo_alpha",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\blend_source_from_albedo_alpha"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "albedo_alpha"
+          },
+          {
+            "Name": "from_opacity_map_alpha",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\blend_source_from_opacity_map"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "opacity_map_alpha"
+          },
+          {
+            "Name": "from_opacity_map_rgb",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\blend_source_from_opacity_map"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "opacity_map_rgb"
+          },
+          {
+            "Name": "from_opacity_map_alpha_and_albedo_alpha",
+            "Option": {
+              "Type": "render_method_option",
+              "Name": "shaders\\shader_options\\blend_source_from_opacity_map"
+            },
+            "VertexFunction": "invalid",
+            "PixelFunction": "opacity_map_alpha_and_albedo_alpha"
+          }
+        ],
+        "VertexFunction": "invalid",
+        "PixelFunction": "alpha_blend_source"
+      }
+    ],
+    "EntryPoints": [
+      {
+        "EntryPoint": "Static_Sh",
+        "Passes": [
+          {
+            "Flags": "None",
+            "CategoryDependencies": []
+          }
+        ]
+      },
+      {
+        "EntryPoint": "Static_Per_Vertex",
+        "Passes": [
+          {
+            "Flags": "None",
+            "CategoryDependencies": []
+          }
+        ]
+      },
+      {
+        "EntryPoint": "Static_Prt_Ambient",
+        "Passes": [
+          {
+            "Flags": "None",
+            "CategoryDependencies": []
+          }
+        ]
+      }
+    ],
+    "VertexTypes": [
+      {
+        "VertexType": "World",
+        "Dependencies": []
+      },
+      {
+        "VertexType": "Rigid",
+        "Dependencies": []
+      },
+      {
+        "VertexType": "Skinned",
+        "Dependencies": []
+      }
+    ],
+    "GlobalPixelShader": {
+      "Type": "global_pixel_shader",
+      "Name": "shaders\\glass_shared_pixel_shaders"
+    },
+    "GlobalVertexShader": {
+      "Type": "global_vertex_shader",
+      "Name": "shaders\\glass_shared_vertex_shaders"
+    },
+    "Flags": "None",
+    "Version": 0
+  }
+}
